@@ -19,10 +19,6 @@ nav, li, a {
   display: inline;
 }
 
-<<<<<<< HEAD
-body header nav, body header li, body header .searchbtn, body .navbar1of2 nav, body .navbar1of2 li, body .navbar1of2 .searchbtn, body .navbar2of2 nav, body .navbar2of2 li, body .navbar2of2 .searchbtn {
-  display: inline;
-=======
 .topnav #logo {
   float: inline-start;
 }
@@ -38,5 +34,4 @@ body header nav, body header li, body header .searchbtn, body .navbar1of2 nav, b
 #mainpic {
   max-width: 100%;
   height: auto;
->>>>>>> 42a7bf5c7e3a0fd95e3e1762953174c18f9ea7cb
 }/*# sourceMappingURL=style.css.map */
