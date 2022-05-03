@@ -8,6 +8,7 @@ Other sub-slogans: We must do which we cannot -Eleanor Roosevelt
 navbar: FitIt-logo, Help|Join|Sign In
 Sub-navbar: New|Women|Men|Kids
 
+Nice To Have:
 navbar with alternating appearance of text: Members get free shipping and free 30-day returns (link: Join us|Learn more) - Students Now Get 10% Off! (link: Learn more)
 
 Picture that takes the width of the screen
