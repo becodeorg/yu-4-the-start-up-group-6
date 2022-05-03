@@ -8,15 +8,25 @@ body{
 }
 
     header{
-        #005371
+        margin: 40px;
+        padding:15px;
+        box-shadow: #005371;
 
-        nav{
+        nav, li, a{
         display: inline;
-
-
-        nav, li, .searchbtn{
-        display: inline;
-
         }
-    }
+
+        .topnav, a{
+            float: right;
+            color: #f2f2f2;
+            text-align: right;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+         }
+}
+
+#mainpic{
+    max-width: 100%;
+    height: auto;
 }
