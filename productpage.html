@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FitIt</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="" href="index.html">
 </head>
 <body>
 
@@ -14,7 +16,7 @@
     <header>
         <img src="pics/logoFinal_fitIt_72px.png" width="81" height="43.4" alt="FitIt-Logo"> <!--logo-->
         
-        <nav>
+        <nav class="navbar1of2">
             <ul>
                 <!--for productpage<li><a href="#" class="Current">Home</a></li>-->
                 <li><a href="#" title="Help">Help</a></li>
@@ -23,7 +25,7 @@
             </ul>
         </nav>
 
-        <nav>
+        <nav class="navbar2of2">
             <ul>
                 <li><a href="#" title="New">New</a></li>
                 <li><a href="#" title="Women">Women</a></li>
@@ -31,6 +33,10 @@
                 <li><a href="#" title="Kids">Kids</a></li>
                 <li><a href="#" title="Outlet">Outlet</a></li>
             </ul>
+            <form class="searchbtn" action="action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
         </nav>
 
         <!--NiceToHave like a carousel/parallex img
