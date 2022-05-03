@@ -1,0 +1,28 @@
+Colors:
+#14bbdd #005371 #9c4500 #f99136
+
+Brand: FitIt
+Slogan: Break the limits!
+Other sub-slogans: We must do which we cannot -Eleanor Roosevelt
+
+navbar: FitIt-logo, Help|Join|Sign In
+Sub-navbar: New|Women|Men|Kids
+
+navbar with alternating appearance of text: Members get free shipping and free 30-day returns (link: Join us|Learn more) - Students Now Get 10% Off! (link: Learn more)
+
+Picture that takes the width of the screen
+(Button: Join (the community))
+
+Photo-gallery with <> buttons
+
+Footer:
+Gift cards, Find a store, Sign up, Become a member, Student discount, Feedback, Outlet
+
+Get help: Shipping and Delivery, Return Policy,  Terms and Conditions, Transparency in Supply Chain, Contact us
+
+About FitIt: News, Careers, Investors, Sustainability
+
+Twitter, Instagram, Facebook-logo'screen
+
+Footer in the footer: Copyright 2022 FitIt, Inc. All Rights Reserved
++ Guides, Terms of Use, Terms of Sale, Privacy and Cookie Policy, Cookie Settings
