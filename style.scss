@@ -1,44 +1,49 @@
-header, .article1, .article2, aside, footer{
-    display: block;
+body{
+    display:inline-block;
+    background-color: #005371;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header{
-    margin: 0;
-    padding:15px;
-    overflow:hidden;
-    background-color: #005371;
-    top: 0;
-}
+    display: block;
 
+    .searchbtn{
+        display:block;
+        justify-content: end;
+    }
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #14bbdd;
-}
+    ul{
+        list-style-type: none;
+    }
+    
+    .topnav{
+        display: block;
+        width: 100%;
+        margin: 30px;
 
-        nav, li, a{
-        display: inline;
-        }
-
-
-        .topnav{
-            #logo{
-                float:inline-start;
-            }
-
-        
-        a{
+        li{
+            display: inline;
             float: right;
-            color: #f2f2f2;
-            text-align: right;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
-         }
-        }
 
+            a {
+                color: #ffffff;
+              }
+       }
+       }
+       
 
-#mainpic{
-    max-width: 100%;
-    height: auto;
+       .subnav{
+        display: flex;
+        width: 100%;
+        box-shadow: 0 0 25px 0 black;
+        
+        li{
+            display: inline;
+            float: right;
+
+            a {
+                color: #ffffff;
+              }
+       }
+       }
 }
