@@ -10,6 +10,7 @@ body header, body .navbar1of2, body .navbar2of2 {
   display: inline;
   box-shadow: 0 5px 5px #005371;
 }
+
 body header nav, body header li, body header .searchbtn, body .navbar1of2 nav, body .navbar1of2 li, body .navbar1of2 .searchbtn, body .navbar2of2 nav, body .navbar2of2 li, body .navbar2of2 .searchbtn {
   display: inline;
 }/*# sourceMappingURL=style.css.map */
