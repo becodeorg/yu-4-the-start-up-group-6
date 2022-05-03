@@ -1,39 +1,42 @@
-header, .article1, .article2, aside, footer {
-  display: block;
+body {
+  display: inline-block;
+  background-color: #005371;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
-  margin: 0;
-  padding: 15px;
-  overflow: hidden;
-  background-color: #005371;
-  top: 0;
+  display: block;
 }
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #14bbdd;
+header .searchbtn {
+  display: block;
+  justify-content: end;
 }
-
-nav, li, a {
+header ul {
+  list-style-type: none;
+}
+header .topnav {
+  display: block;
+  width: 100%;
+  margin: 30px;
+}
+header .topnav li {
   display: inline;
-}
-
-.topnav #logo {
-  float: inline-start;
-}
-.topnav a {
   float: right;
-  color: #f2f2f2;
-  text-align: right;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
 }
-
-#mainpic {
-  max-width: 100%;
-  height: auto;
+header .topnav li a {
+  color: #ffffff;
+}
+header .subnav {
+  display: flex;
+  width: 100%;
+  box-shadow: 0 0 25px 0 black;
+}
+header .subnav li {
+  display: inline;
+  float: right;
+}
+header .subnav li a {
+  color: #ffffff;
 }
 
 #mainpic {
