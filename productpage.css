@@ -12,7 +12,35 @@
 header {
   background-color: #005371;
   grid-area: header;
-  padding: 10px;
+}
+
+header #logo {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+header #navOne {
+  position: relative;
+  bottom: 25px;
+  font-weight: normal;
+  text-align: right;
+  letter-spacing: 1px;
+  padding-right: 10px;
+}
+
+header #navtwo {
+  position: relative;
+  top: 5px;
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+header #searchbtn {
+  position: relative;
+  bottom: 16px;
+  text-align: right;
+  padding-right: 10px;
 }
 
 .main {
@@ -36,14 +64,29 @@ aside {
 }
 
 footer {
-  background-color: #005371;
-  grid-area: footer;
-  padding: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 3fr 0.5fr;
+  grid-template-areas: "column1of3 column2of3 column3of3" "content content content";
 }
 
-footer li, footer a {
-  color: #fff;
-  list-style-type: none;
+.column1of3 {
+  grid-area: column1of3;
+}
+
+.column2of3 {
+  grid-area: column2of3;
+}
+
+.column3of3 {
+  grid-area: column3of3;
+}
+
+.emptycolumn {
+  grid-area: emptycolumn;
+}
+
+.copyrght {
+  grid-area: copyrght;
 }
 
 a {
@@ -51,9 +94,16 @@ a {
   text-decoration: none;
 }
 
+li, a {
+  color: #fff;
+  list-style-type: none;
+}
+
 h4 {
   color: #fff;
   font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 1px;
 }
 
 @media only screen and (min-width: 0px) and (max-width: 480px) {

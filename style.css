@@ -3,7 +3,7 @@
   font-size: 14px;
   display: grid;
   height: 100vh;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr 0.8fr;
   grid-gap: 0.2rem;
   grid-template-areas: "header header header header" "main main main main" "article1 article1 article2 article2" "aside aside aside aside" "footer footer footer footer";
@@ -12,11 +12,39 @@
 header {
   background-color: #005371;
   grid-area: header;
-  padding: 10px;
+}
+header #navOne {
+  position: relative;
+  bottom: 25px;
+  font-weight: normal;
+  text-align: right;
+  letter-spacing: 1px;
+  padding-right: 10px;
+}
+header #navtwo {
+  position: relative;
+  top: 5px;
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: 1px;
+}
+header #logo {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+header #searchbtn {
+  position: relative;
+  bottom: 16px;
+  text-align: right;
+  padding-right: 10px;
 }
 
 .main {
   grid-area: main;
+  text-align: center;
+}
+.main #searchbtn {
+  margin-top: 20px;
 }
 
 .article1 {
@@ -37,12 +65,9 @@ aside {
 
 footer {
   background-color: #005371;
-  grid-area: footer;
-  padding: 10px;
-}
-footer li, footer a {
-  color: #fff;
-  list-style-type: none;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1.8fr;
+  grid-template-areas: "column1 column2 column3";
 }
 
 a {
@@ -50,9 +75,16 @@ a {
   text-decoration: none;
 }
 
+li, a {
+  color: #fff;
+  list-style-type: none;
+}
+
 h4 {
   color: #fff;
   font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 1px;
 }
 
 @media only screen and (min-width: 0px) and (max-width: 480px) {
