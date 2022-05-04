@@ -115,6 +115,54 @@ h4 {
   }
 }
 /* @media only screen and (min-width: 1024px) and (max-width: 1300px)*/
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.carousel {
+  grid-column: span 4;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+.carousel .mySlides {
+  display: none;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+.carousel .mySlides .text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.carousel .fade {
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
 .section-1 {
   grid-column: span 4;
   display: flex;
