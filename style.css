@@ -10,30 +10,31 @@ header {
   background-color: #005371;
   grid-column: span 4;
 }
-header #navOne {
-  position: relative;
-  bottom: 25px;
-  font-weight: normal;
-  text-align: right;
-  letter-spacing: 1px;
-  padding-right: 10px;
-}
-header #navTwo {
-  position: relative;
-  top: 5px;
-  font-weight: normal;
-  text-align: center;
-  letter-spacing: 1px;
-}
 header #logo {
   padding-top: 10px;
   padding-left: 10px;
 }
 header #searchBtn {
   position: relative;
-  bottom: 16px;
+  bottom: 40px;
   text-align: right;
   padding-right: 10px;
+  padding-bottom: 0px;
+}
+header .allNav {
+  grid-column: span 4;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+header .allNav #navOne {
+  grid-column: span 4;
+  text-align: center;
+  padding-bottom: 10px;
+}
+header .allNav #navTwo {
+  grid-column: span 4;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .main {
@@ -59,11 +60,13 @@ aside {
 
 footer {
   grid-column: span 4;
-  background-color: #005371;
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
+  background-color: #005371;
 }
 footer .column1 {
   grid-column: span 1;
+  margin-top: 50px;
 }
 footer .column2 {
   grid-column: span 1;
@@ -71,10 +74,19 @@ footer .column2 {
 footer .column3 {
   grid-column: span 1;
 }
+footer .content {
+  grid-column: span 4;
+  text-align: center;
+  color: #fff;
+}
 
 a {
-  color: black;
-  text-decoration: none;
+  color: #fff;
+}
+
+li, a {
+  color: #fff;
+  list-style-type: none;
 }
 
 h4 {
