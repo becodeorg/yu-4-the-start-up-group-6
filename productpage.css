@@ -8,60 +8,81 @@
 
 header {
   background-color: #005371;
-}
-header #navOne {
-  position: relative;
-  bottom: 25px;
-  font-weight: normal;
-  text-align: right;
-  letter-spacing: 1px;
-  padding-right: 10px;
-}
-header #navtwo {
-  position: relative;
-  top: 5px;
-  font-weight: normal;
-  text-align: center;
-  letter-spacing: 1px;
+  grid-column: span 4;
 }
 header #logo {
   padding-top: 10px;
   padding-left: 10px;
 }
-header #searchbtn {
+header #searchBtn {
   position: relative;
-  bottom: 16px;
+  bottom: 40px;
   text-align: right;
   padding-right: 10px;
+  padding-bottom: 0px;
+}
+header .allNav {
+  grid-column: span 4;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+header .allNav #navOne {
+  grid-column: span 4;
+  text-align: center;
+  padding-bottom: 10px;
+}
+header .allNav #navTwo {
+  grid-column: span 4;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .main {
   text-align: center;
-}
-.main #searchbtn {
-  margin-top: 20px;
+  grid-column: span 4;
 }
 
 .article1 {
+  grid-column: span 2;
   padding: 10px;
 }
 
 .article2 {
+  grid-column: span 2;
   padding: 10px;
 }
 
 aside {
+  grid-column: span 4;
   background-color: #f99136;
   padding: 10px;
 }
 
 footer {
+  grid-column: span 4;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   background-color: #005371;
+}
+footer .column1 {
+  grid-column: span 1;
+  margin-top: 50px;
+  line-height: 1.4;
+}
+footer .column2 {
+  grid-column: span 1;
+}
+footer .column3 {
+  grid-column: span 1;
+}
+footer .content {
+  grid-column: span 4;
+  text-align: center;
+  color: #fff;
 }
 
 a {
   color: #fff;
-  text-decoration: none;
 }
 
 li, a {
@@ -94,10 +115,7 @@ h4 {
     grid-area: article2;
   }
 }
-<<<<<<< HEAD
-=======
 /* @media only screen and (min-width: 1024px) and (max-width: 1300px)*/
->>>>>>> 63569b6b0bdc4149c7181073f8c1d379546ddd6d
 .section-1 {
   grid-column: span 4;
   display: flex;
