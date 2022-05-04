@@ -1,49 +1,39 @@
-body{
-    display:inline-block;
-    background-color: #005371;
-    font-family: Arial, Helvetica, sans-serif;
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: .2fr 1.5fr 1.2fr .8fr .8fr;
+    grid-gap: 0.2rem;
+    grid-template-areas: 
+       "header header header header"
+       "main main main main"
+       "article1 article1 article2 article2"
+       "aside aside aside aside"
+       "footer footer footer footer"
 }
 
 header{
-    display: block;
+    background-color: #005371;
+    grid-area: header;
 
-    .searchbtn{
-        display:block;
-        justify-content: end;
-    }
+}
 
-    ul{
-        list-style-type: none;
-    }
-    
-    .topnav{
-        display: block;
-        width: 100%;
-        margin: 30px;
+.main{
+    grid-area: main;
+}
 
-        li{
-            display: inline;
-            float: right;
+.article1{
+    grid-area: article1;
+}
 
-            a {
-                color: #ffffff;
-              }
-       }
-       }
-       
+.article2{
+    grid-area: article2;
+}
 
-       .subnav{
-        display: flex;
-        width: 100%;
-        box-shadow: 0 0 25px 0 black;
-        
-        li{
-            display: inline;
-            float: right;
+aside{
+    grid-area: aside;
+}
 
-            a {
-                color: #ffffff;
-              }
-       }
-       }
+footer{
+    grid-area: footer;
 }

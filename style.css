@@ -1,40 +1,33 @@
-body {
-  display: inline-block;
-  background-color: #005371;
-  font-family: Arial, Helvetica, sans-serif;
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr 0.8fr;
+  grid-gap: 0.2rem;
+  grid-template-areas: "header header header header" "main main main main" "article1 article1 article2 article2" "aside aside aside aside" "footer footer footer footer";
 }
 
 header {
-  display: block;
+  background-color: #005371;
+  grid-area: header;
 }
-header .searchbtn {
-  display: block;
-  justify-content: end;
+
+.main {
+  grid-area: main;
 }
-header ul {
-  list-style-type: none;
+
+.article1 {
+  grid-area: article1;
 }
-header .topnav {
-  display: block;
-  width: 100%;
-  margin: 30px;
+
+.article2 {
+  grid-area: article2;
 }
-header .topnav li {
-  display: inline;
-  float: right;
+
+aside {
+  grid-area: aside;
 }
-header .topnav li a {
-  color: #ffffff;
-}
-header .subnav {
-  display: flex;
-  width: 100%;
-  box-shadow: 0 0 25px 0 black;
-}
-header .subnav li {
-  display: inline;
-  float: right;
-}
-header .subnav li a {
-  color: #ffffff;
+
+footer {
+  grid-area: footer;
 }/*# sourceMappingURL=style.css.map */
