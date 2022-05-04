@@ -78,10 +78,6 @@ h4 {
     grid-area: article2;
   }
 }
-.main {
-  grid-column: span 4;
-}
-
 .section-1 {
   grid-column: span 4;
   display: flex;
@@ -94,8 +90,9 @@ h4 {
   height: 25%;
   width: 25%;
   position: relative;
-  box-shadow: 0 4px 10px 5px rgba(85, 84, 84, 0.2);
+  box-shadow: 0 4px 10px 5px rgba(68, 65, 58, 0.2);
   border-radius: 5%;
+  margin: 20px 10px;
   padding: 20px;
   text-align: center;
 }
