@@ -242,6 +242,9 @@ h4, h5 {
   padding: 20px;
   text-align: center;
 }
+.section-1 .card .link {
+  position: relative;
+}
 .section-1 .card h1 {
   color: aliceblue;
   text-shadow: 2px 2px 3px #272525;
