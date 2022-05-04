@@ -1,44 +1,84 @@
-body {
-  display: inline-block;
-  background-color: #005371;
+.container {
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr 0.8fr;
+  grid-gap: 0.2rem;
+  grid-template-areas: "header header header header" "main main main main" "article1 article1 article2 article2" "aside aside aside aside" "footer footer footer footer";
 }
 
 header {
-  display: block;
-}
-header .searchbtn {
-  display: block;
-  justify-content: end;
-}
-header ul {
-  list-style-type: none;
-}
-header .topnav {
-  display: block;
-  width: 100%;
-  margin: 30px;
-}
-header .topnav li {
-  display: inline;
-  float: right;
-}
-header .topnav li a {
-  color: #ffffff;
-}
-header .subnav {
-  display: flex;
-  width: 100%;
-  box-shadow: 0 0 25px 0 black;
-}
-header .subnav li {
-  display: inline;
-  float: right;
-}
-header .subnav li a {
-  color: #ffffff;
+  background-color: #005371;
+  grid-area: header;
+  padding: 10px;
 }
 
+.main {
+  grid-area: main;
+}
+
+.article1 {
+  grid-area: article1;
+  padding: 10px;
+}
+
+.article2 {
+  grid-area: article2;
+  padding: 10px;
+}
+
+aside {
+  background-color: #f99136;
+  grid-area: aside;
+  padding: 10px;
+}
+
+footer {
+  background-color: #005371;
+  grid-area: footer;
+  padding: 10px;
+}
+
+footer li, footer a {
+  color: #fff;
+  list-style-type: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+h4 {
+  color: #fff;
+  font-size: 16px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 480px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.6fr 0.4fr 2.2fr 1.2fr 1.2fr 1fr;
+    grid-template-areas: "header" "main" "article1" "article2" "aside" "footer";
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.6fr 0.4fr 2fr 1fr 0.8fr;
+    grid-template-areas: "header header" "main main" "article1  article2" "aside aside" "footer footer";
+  }
+
+  .article1 {
+    grid-area: article1;
+  }
+
+  .article2 {
+    grid-area: article2;
+  }
+}
+/*# sourceMappingURL=style.css.map */
 #mainpic {
   max-width: 100%;
   height: auto;
@@ -47,32 +87,13 @@ header .subnav li a {
 
 .productCards {
   display: flex;
+  flex-wrap: wrap;
   margin: 10px;
 }
 
-/* Float four columns side by side */
-.column {
-  float: left;
-  height: 25rem;
-  width: 25%;
-  padding: 0 10px;
-  margin-bottom: 10px;
-}
-
-/* Remove extra left and right margins, due to padding */
-.productCards {
-  margin: 0 -5px;
-}
-
-/* Clear floats after the columns */
-.productCards:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Style the counter cards */
 .card {
+  height: 500px;
+  width: 500px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
   text-align: center;
