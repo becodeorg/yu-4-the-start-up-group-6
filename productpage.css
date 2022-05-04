@@ -8,6 +8,7 @@
 
 header {
   background-color: #005371;
+  grid-column: span 4;
 }
 header #navOne {
   position: relative;
@@ -17,7 +18,7 @@ header #navOne {
   letter-spacing: 1px;
   padding-right: 10px;
 }
-header #navtwo {
+header #navTwo {
   position: relative;
   top: 5px;
   font-weight: normal;
@@ -28,7 +29,7 @@ header #logo {
   padding-top: 10px;
   padding-left: 10px;
 }
-header #searchbtn {
+header #searchBtn {
   position: relative;
   bottom: 16px;
   text-align: right;
@@ -37,36 +38,43 @@ header #searchbtn {
 
 .main {
   text-align: center;
-}
-.main #searchbtn {
-  margin-top: 20px;
+  grid-column: span 4;
 }
 
 .article1 {
+  grid-column: span 2;
   padding: 10px;
 }
 
 .article2 {
+  grid-column: span 2;
   padding: 10px;
 }
 
 aside {
+  grid-column: span 4;
   background-color: #f99136;
   padding: 10px;
 }
 
 footer {
+  grid-column: span 4;
   background-color: #005371;
+  grid-template-columns: repeat(3, 1fr);
+}
+footer .column1 {
+  grid-column: span 1;
+}
+footer .column2 {
+  grid-column: span 1;
+}
+footer .column3 {
+  grid-column: span 1;
 }
 
 a {
-  color: #fff;
+  color: black;
   text-decoration: none;
-}
-
-li, a {
-  color: #fff;
-  list-style-type: none;
 }
 
 h4 {
@@ -94,10 +102,7 @@ h4 {
     grid-area: article2;
   }
 }
-<<<<<<< HEAD
-=======
 /* @media only screen and (min-width: 1024px) and (max-width: 1300px)*/
->>>>>>> 63569b6b0bdc4149c7181073f8c1d379546ddd6d
 .section-1 {
   grid-column: span 4;
   display: flex;
@@ -107,8 +112,7 @@ h4 {
   width: 100%;
 }
 .section-1 .card {
-  height: 25%;
-  width: 25%;
+  width: 350px;
   position: relative;
   box-shadow: 0 4px 10px 5px rgba(68, 65, 58, 0.2);
   border-radius: 5%;
@@ -117,6 +121,7 @@ h4 {
   text-align: center;
 }
 .section-1 .card h1 {
+  color: aliceblue;
   text-transform: uppercase;
   font-size: x-large;
   position: absolute;
@@ -126,8 +131,6 @@ h4 {
 }
 .section-1 .card img {
   width: 100%;
-  height: auto;
-  overflow: auto;
 }
 
 #mainpic {
