@@ -3,22 +3,12 @@
   font-size: 14px;
   display: grid;
   height: 100vh;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr 0.8fr;
-  grid-gap: 0.2rem;
-  grid-template-areas: "header header header header" "main main main main" "article1 article1 article2 article2" "aside aside aside aside" "footer footer footer footer";
+  grid-template-columns: repeat(4, 1fr);
 }
 
 header {
   background-color: #005371;
-  grid-area: header;
 }
-
-header #logo {
-  padding-top: 10px;
-  padding-left: 10px;
-}
-
 header #navOne {
   position: relative;
   bottom: 25px;
@@ -27,7 +17,6 @@ header #navOne {
   letter-spacing: 1px;
   padding-right: 10px;
 }
-
 header #navtwo {
   position: relative;
   top: 5px;
@@ -35,7 +24,10 @@ header #navtwo {
   text-align: center;
   letter-spacing: 1px;
 }
-
+header #logo {
+  padding-top: 10px;
+  padding-left: 10px;
+}
 header #searchbtn {
   position: relative;
   bottom: 16px;
@@ -44,49 +36,27 @@ header #searchbtn {
 }
 
 .main {
-  grid-area: main;
+  text-align: center;
+}
+.main #searchbtn {
+  margin-top: 20px;
 }
 
 .article1 {
-  grid-area: article1;
   padding: 10px;
 }
 
 .article2 {
-  grid-area: article2;
   padding: 10px;
 }
 
 aside {
   background-color: #f99136;
-  grid-area: aside;
   padding: 10px;
 }
 
 footer {
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 3fr 0.5fr;
-  grid-template-areas: "column1of3 column2of3 column3of3" "content content content";
-}
-
-.column1of3 {
-  grid-area: column1of3;
-}
-
-.column2of3 {
-  grid-area: column2of3;
-}
-
-.column3of3 {
-  grid-area: column3of3;
-}
-
-.emptycolumn {
-  grid-area: emptycolumn;
-}
-
-.copyrght {
-  grid-area: copyrght;
+  background-color: #005371;
 }
 
 a {
@@ -109,15 +79,11 @@ h4 {
 @media only screen and (min-width: 0px) and (max-width: 480px) {
   .container {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.6fr 0.4fr 2.2fr 1.2fr 1.2fr 1fr;
-    grid-template-areas: "header" "main" "article1" "article2" "aside" "footer";
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 1024px) {
   .container {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.6fr 0.4fr 2fr 1fr 0.8fr;
-    grid-template-areas: "header header" "main main" "article1  article2" "aside aside" "footer footer";
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .article1 {
@@ -128,33 +94,36 @@ h4 {
     grid-area: article2;
   }
 }
-/*# sourceMappingURL=style.css.map */
-h1 {
-  text-transform: uppercase;
-  font-size: x-large;
-}
-
+/* @media only screen and (min-width: 1024px) and (max-width: 1300px)*/
 .section-1 {
+  grid-column: span 4;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   flex-wrap: wrap;
-  margin: auto;
+  flex-direction: row;
+  overflow-wrap: normal;
+  width: 100%;
 }
-
-.card {
-  height: 300px;
-  width: 300px;
-  box-shadow: 0 4px 10px 5px rgba(85, 84, 84, 0.2);
+.section-1 .card {
+  height: 25%;
+  width: 25%;
+  position: relative;
+  box-shadow: 0 4px 10px 5px rgba(68, 65, 58, 0.2);
   border-radius: 5%;
   padding: 20px;
   text-align: center;
 }
-
-.card-img {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+.section-1 .card h1 {
+  text-transform: uppercase;
+  font-size: x-large;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.section-1 .card img {
+  width: 100%;
+  height: auto;
+  overflow: auto;
 }
 
 #mainpic {
