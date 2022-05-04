@@ -1,8 +1,10 @@
+/*body{background-color: #14bbdd;}*/
 .container {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   display: grid;
   height: 100vh;
+  gap: 10px;
   grid-template-columns: repeat(4, 1fr);
 }
 
@@ -11,12 +13,12 @@ header {
   grid-column: span 4;
 }
 header #logo {
-  padding-top: 10px;
-  padding-left: 10px;
+  padding-top: 30px;
+  padding-left: 30px;
 }
 header #searchBtn {
   position: relative;
-  bottom: 40px;
+  bottom: 32px;
   text-align: right;
   padding-right: 10px;
   padding-bottom: 0px;
@@ -30,26 +32,55 @@ header .allNav #navOne {
   grid-column: span 4;
   text-align: center;
   padding-bottom: 10px;
+  word-spacing: 2em;
 }
 header .allNav #navTwo {
   grid-column: span 4;
   text-align: center;
   margin-bottom: 20px;
+  word-spacing: 2em;
 }
 
 .main {
   text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: #005371;
   grid-column: span 4;
 }
 
 .article1 {
   grid-column: span 2;
   padding: 10px;
+  padding-left: 10px;
+}
+.article1 #sizeImg {
+  padding: 10px;
+  border: 10px solid #005371;
+}
+.article1 button {
+  background-color: #f99136;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 10px;
+  border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -ms-border-radius: 10px 10px 10px 10px;
+  -o-border-radius: 10px 10px 10px 10px;
+}
+.article1 p {
+  color: #005371;
 }
 
 .article2 {
   grid-column: span 2;
   padding: 10px;
+  padding-left: 50px;
+}
+.article2 #handImg {
+  padding: 10px;
+  border: 10px solid #005371;
+  margin-left: 10px;
 }
 
 aside {
@@ -61,23 +92,42 @@ aside {
 footer {
   grid-column: span 4;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   background-color: #005371;
+  font-size: 12px;
 }
 footer .column1 {
   grid-column: span 1;
-  margin-top: 50px;
+  margin-top: 12px;
+  line-height: 1.4;
 }
 footer .column2 {
   grid-column: span 1;
+  line-height: 1.4;
 }
 footer .column3 {
   grid-column: span 1;
+  line-height: 1.4;
+}
+footer .column4 {
+  grid-column: span 1;
+  line-height: 1.4;
 }
 footer .content {
   grid-column: span 4;
+  font-size: 10px;
   text-align: center;
   color: #fff;
+}
+footer #fbLogo {
+  padding-top: 13px;
+}
+footer #twtLogo {
+  padding-bottom: 7px;
+  padding-left: 10px;
+}
+footer #igLogo {
+  padding-left: 10.4px;
 }
 
 a {
@@ -89,16 +139,25 @@ li, a {
   list-style-type: none;
 }
 
-h4 {
+h4, h5 {
   color: #fff;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: normal;
   letter-spacing: 1px;
+  text-indent: 25px;
 }
 
 @media only screen and (min-width: 0px) and (max-width: 480px) {
   .container {
     grid-template-columns: 1fr;
+  }
+
+  .article1 {
+    grid-column: span 1;
+  }
+
+  .article2 {
+    grid-column: span 1;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 1024px) {
@@ -107,11 +166,11 @@ h4 {
   }
 
   .article1 {
-    grid-area: article1;
+    grid-column: span 1;
   }
 
   .article2 {
-    grid-area: article2;
+    grid-column: span 1;
   }
 }
 /* @media only screen and (min-width: 1024px) and (max-width: 1300px)*/
@@ -146,11 +205,13 @@ h4 {
   margin: auto;
   box-sizing: border-box;
   vertical-align: middle;
+  contain: content;
 }
 .carousel .mySlides .text {
   color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
+  font-size: 2.5vw;
+  text-shadow: 2px 2px 3px #272525;
+  padding: 50px 1px;
   position: absolute;
   bottom: 8px;
   width: 100%;
@@ -183,6 +244,7 @@ h4 {
 }
 .section-1 .card h1 {
   color: aliceblue;
+  text-shadow: 2px 2px 3px #272525;
   text-transform: uppercase;
   font-size: x-large;
   position: absolute;
@@ -192,6 +254,11 @@ h4 {
 }
 .section-1 .card img {
   width: 100%;
+}
+
+.card:hover {
+  transform: scale(0.95);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 #mainpic {

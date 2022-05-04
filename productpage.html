@@ -12,27 +12,28 @@
 
 <div class="container">
   <header>
-    <nav id="topnav">
-        <img id="logo" src="pics/logoFinal_fitIt1white.png" width="81" height="43.4" alt="FitIt-Logo"> <!--logo-->
-            <!--for productpage<a href="#" class="Current">Home</a>-->
+    <img id="logo" src="pics/logoFinal_fitIt1white.png" width="107" height="57" alt="FitIt-Logo"> <!--logo-->
+    <form id="searchBtn" action="action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    <nav class="allNav">
+      <nav id="navOne">
+            <!--for productPage<a href="#" class="Current">Home</a>-->
+            <a href="index.html" title="Home">Home</a>
             <a href="#" title="Help">Help</a>
             <a href="#" title="Join">Join</a>
-            <a href="#" title="Sign Up">Sign Up</a>
+            <a href="#" title="SignUp">SignUp</a>
     </nav>
 
-    <nav id="subnav">
-            <a href="index.html" title="Home">Home</a>
+    <nav id="navTwo">
             <a href="#" title="New">New</a>
             <a href="productpage.html" title="Women">Women</a>
             <a href="#" title="Men">Men</a>
             <a href="#" title="Kids">Kids</a>
             <a href="#" title="Outlet">Outlet</a>
-        <form class="searchbtn" action="action_page.php">
-            <input type="text" placeholder="Search.." name="search">
-            <button type="submit"><i class="fa fa-search"></i></button>
-          </form>
     </nav>
-
+</nav><!--end of allNav-->
     <!--NiceToHave like a carousel/parallex img
     <nav>
     <li><a href="#" title="Members">Members get free shipping and free 30-day return</a></li>
@@ -51,53 +52,63 @@
         <!-- <p><q><em>We must do which we cannot -Eleanor Roosevelt</em></q></p> -->
         <div class="mySlides fade">
           <img src="pics/unsplash_group_yoga_croped2.jpg" style="width:100%">
-          <div class="text">Chek this One!</div>
+          <div class="text">Members get free shipping and free 30-day return</div>
         </div>
         <div class="mySlides fade">
           <img src="pics/running_traks_blue.jpg" style="width:100%">
-          <div class="text">And this one Two!</div>
+          <div class="text">Students Now Get 10% Off</div>
         </div>
         <div class="mySlides fade">
           <img src="pics/LGBT_walk.jpg" style="width:100%">
-          <div class="text">And this one Three!</div>
+          <div class="text">Check out the weekly Promo!</div>
         </div>
     </div>
     <div class="section-1">
 
           <div class="card">
-            <img src="pics/plus_size_confident.jpg" id="productpic" alt="Sport shoes">
+            <img src="pics/product_women_shoes.jpg" id="productpic" alt="Sport shoes">
             <h1>Our Vegan Friendly and Super Rad Sport Shoes</h1>
           </div>
           <div class="card">
             <h1>You will never go back after trying out one of our sport Tops</h1>
-            <img src="pics/plus_size_confident.jpg" id="productpic" alt="Sport shoes">
+            <img src="pics/product_women_top.jpg" id="productpic" alt="Sport Tops">
           </div>
           <div class="card">
-            <h1>Our sports leggins are unique!</h1>
-            <img src="pics/plus_size_confident.jpg" id="productpic" alt="Sport shoes">
+            <h1>Our sports leggings are unique!</h1>
+            <img src="pics/product_women_leggings.jpg" id="productpic" alt="Sport leggings">
           </div>
           <div class="card">
             <h1>Check out our acessories</h1>
-            <img src="pics/plus_size_confident.jpg" id="productpic" alt="Sport shoes">
+            <img src="pics/product_group_workout.jpg" id="productpic" alt="workout">
           </div>
           <div class="card">
             <h1>Deal of the month!</h1>
-            <img src="pics/plus_size_confident.jpg" id="productpic" alt="Sport shoes">
+            <img src="pics/plus_size_WomenOfColor.jpg" id="productpic" alt="Women of color">
           </div>
           <div class="card">
             <h1>Our Girl Power fitness Tips & Tricks</h1>
-            <img src="pics/plus_size_confident.jpg" id="productpic" alt="Sport shoes">
+            <img src="pics/plus_size_confident.jpg" id="productpic" alt="women workout">
           </div>
           <div class="card">
             <h1>Sizes for all Sizes</h1>
-            <img src="pics/plus_size_confident.jpg" id="productpic" alt="Sport shoes">
+            <img src="pics/product_women_workout_yellow.jpg" id="productpic" alt="2 women workout">
+          </div>
+          <div class="card">
+            <h1>Students deals!</h1>
+            <img src="pics/product_women_lifWeights.jpg" id="productpic" alt="Power lifter">
+          </div>
+          <div class="card">
+            <h1>The undeniable basics!</h1>
+            <img src="pics/product_women_tops2.jpg" id="productpic" alt="Basic Tops">
           </div>
 
       </div><!--end of section-1-->
 
       <aside>
-        <p>This is an aside!</p>
+        <!--<p>This is an aside!</p>-->
+    </aside><!--end of aside-->
 
+    <footer>
         <div class="column1"><!--All in CAPITAL, BOLD lettering-->
             <ul>
                 <li><a href="#"></a>Gift Cards</li>
@@ -111,7 +122,7 @@
         </div>
 
         <div class="column2">
-            <h4>GET HELP</h4>
+            <h5>GET HELP</h5>
             <ul>
                 <li><a href="#"></a>Shipping and Delivery</li>
                 <li><a href="#"></a>Return Policy</li>
@@ -122,7 +133,7 @@
         </div>
 
         <div class="column3">
-            <h4>ABOUT FITIT</h4>
+            <h5>ABOUT FITIT</h5>
             <ul>
                 <li><a href="#"></a>News</li>
                 <li><a href="#"></a>Careers</li>
@@ -130,10 +141,16 @@
                 <li><a href="#"></a>Sustainability</li>
             </ul>
         </div>
-    </aside><!--end of aside-->
 
-    <footer>
-        <p class="content">&copy;2022 FitIt, Inc. All Rights Reserved | <img id="fbLogo" src="pics/facebook_logo.png" width="5.5%" height="5.5%" alt="Facebook-Logo"> <img id="twtLogo" src="pics/twitter_logo.png" width="3.7%" height="3.7%" alt="Twitter-Logo"> <img id="igLogo" src="pics/Instagram_logo.png" width="3.4%" height="3.4%" alt="Instagram-Logo"> | Guides | Terms of Use | Terms of Sale | Privacy & Cookie Policy | Cookie Settings</p>
+        <div class="column4">
+            <img id="fbLogo" src="pics/facebook_logo.png" width="21%" height="auto" alt="Facebook-Logo">
+            <br>
+            <img id="twtLogo" src="pics/twitter_logo.png" width="15%" height="auto" alt="Twitter-Logo">
+            <br>
+            <img id="igLogo" src="pics/Instagram_logo.png" width="14%" height="auto" alt="Instagram-Logo">
+        </div>
+
+        <p class="content">&copy;2022 FitIt, Inc. All Rights Reserved | Guides | Terms of Use | Terms of Sale | Privacy & Cookie Policy | Cookie Settings</p>
     </footer><!--end of footer-->
 
 </div><!--end of container-->
