@@ -20,11 +20,12 @@
 
 <h3>Break-Down of the Fit It website</h3>
 <hr>
+<h4>We as Co-Founders of Fit It</h4>
 <ul>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
+<li>One of us made the Home page.</li>
+<li>The other made the Women product page.</li>
+<li>There was clear amount of communication and teamwork, which resulted in equal input and output.</li>
+<li>End-result: joined-effort Fit It -website for all.</li>
 </ul>
 
 <h3>New in Fit It</h3>
