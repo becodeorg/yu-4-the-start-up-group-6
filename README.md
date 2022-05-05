@@ -15,13 +15,13 @@
 <ul>
 <li>Blue: stands for Trust. We are Dependable and stand Strong in our believes.</li>
 
-<li>Orange: stands for Friendly. We are your next door neighbour: a Cheerful person and ful of Confidence.</li>
+<li>Orange: stands for Friendly. We are your next door neighbour: a Cheerful person and full of Confidence.</li>
 </ul>
 
 <h3>Break-Down of the Fit It website</h3>
 <hr>
 <ul>
-<li></li>
+<li>We used a Grid for both pages and flex for the cards display has the main design structure</li>
 <li></li>
 <li></li>
 <li></li>
@@ -41,11 +41,15 @@
 
 <h3>Struggle to the Finish?!</h3>
 <hr>
+
+<h4>The Push & Pull of Grid and flex</h4>
 <ul>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
+<li>When implementing the flexbox layout module we first struggled with the sizing, margins and paddings and compatability with the Grid module layout. Nothing seemed to work, Grid was just to "autoritarian" and didn't allow for the flex to "run". Until finnally after a few laps with coach Basile we hit the homerun by addding a small line that changed it all.</li>
+<li>&lt;grid-column: span 4;
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: row;&gt;</li>
+<li>grid-column:"" - Was what we needed to place before the flex lines, so the structure could finally work complementing each other. After this line was added and the comma's and typo's cleaned we finally saw magic happen and the Fit It came to life.</li>
 </ul>
 
 <h3>Nice to Have</h3>
