@@ -28,6 +28,9 @@ header .allNav {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
+header .allNav .disabled {
+  color: #69858f;
+}
 header .allNav #navOne {
   grid-column: span 4;
   text-align: center;

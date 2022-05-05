@@ -28,6 +28,9 @@ header .allNav {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
+header .allNav .disabled {
+  color: #69858f;
+}
 header .allNav #navOne {
   grid-column: span 4;
   text-align: center;
@@ -49,14 +52,39 @@ header .allNav #navTwo {
   grid-column: span 4;
 }
 
+/*Dummy card
+.card {
+    width: 350px;
+    position: relative;
+    box-shadow: 0 4px 10px 5px rgba(68, 65, 58, 0.2);
+    border-radius: 5%;
+    margin: 20px 10px;
+    padding: 20px;
+    text-align: center;
+    .link {
+      position: relative;
+    }
+    h1 {
+      color: aliceblue;
+      text-shadow: 2px 2px 3px #272525;
+      text-transform: uppercase;
+      font-size: x-large;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    img {
+      width: 100%;
+
+      }
+    }
+  .card:hover {
+    transform: scale(0.95); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport)}*/
 .article1 {
   grid-column: span 2;
   padding: 10px;
   padding-left: 10px;
-}
-.article1 #sizeImg {
-  padding: 10px;
-  border: 10px solid #005371;
 }
 .article1 button {
   background-color: #f99136;
@@ -77,10 +105,15 @@ header .allNav #navTwo {
   padding: 10px;
   padding-left: 50px;
 }
-.article2 #handImg {
-  padding: 10px;
-  border: 10px solid #005371;
-  margin-left: 10px;
+
+#sizeImg, #handImg {
+  width: 350px;
+  position: relative;
+  box-shadow: 0 4px 10px 5px rgba(68, 65, 58, 0.2);
+  border-radius: 5%;
+  margin: 20px 10px;
+  padding: 20px;
+  text-align: center;
 }
 
 aside {
