@@ -84,12 +84,14 @@ header .allNav #navTwo {
 .article1 {
   grid-column: span 2;
   padding: 10px;
-  padding-left: 10px;
+  padding-left: 50px;
+  margin-left: 55px;
 }
 .article1 button {
   background-color: #f99136;
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 10px;
+  margin-left: 150px;
   border-radius: 10px 10px 10px 10px;
   -webkit-border-radius: 10px 10px 10px 10px;
   -moz-border-radius: 10px 10px 10px 10px;
@@ -98,6 +100,16 @@ header .allNav #navTwo {
 }
 .article1 p {
   color: #005371;
+  margin-left: 28px;
+}
+.article1 h1 {
+  margin-left: 85px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #005371;
+  text-shadow: 2px 2px 3px #272525;
+  text-transform: uppercase;
+  font-size: x-large;
+  font-weight: bold;
 }
 
 .article2 {
@@ -114,6 +126,14 @@ header .allNav #navTwo {
   margin: 20px 10px;
   padding: 20px;
   text-align: center;
+}
+
+#sizeImg:hover {
+  transform: scale(0.95);
+}
+
+#handImg:hover {
+  transform: scale(0.95);
 }
 
 aside {
