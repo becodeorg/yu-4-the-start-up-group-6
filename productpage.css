@@ -84,6 +84,7 @@ header .allNav #navTwo {
 .article1 {
   grid-column: span 2;
   padding: 10px;
+<<<<<<< HEAD
   padding-left: 150px;
   margin-left: 55px;
 }
@@ -108,6 +109,34 @@ header .allNav #navTwo {
   -o-border-radius: 10px 10px 10px 10px;
   box-shadow: 0 4px 10px 5px rgba(68, 65, 58, 0.2);
 }
+=======
+  padding-left: 50px;
+  margin-left: 55px;
+  /*button{
+          background-color: #f99136;
+          font-family: $font-family;
+          margin-left: 160px;
+          border-radius: 10px 10px 10px 10px;
+          -webkit-border-radius: 10px 10px 10px 10px;
+          -moz-border-radius: 10px 10px 10px 10px;
+          -ms-border-radius: 10px 10px 10px 10px;
+          -o-border-radius: 10px 10px 10px 10px;
+          box-shadow: 0 4px 10px 5px rgba(68, 65, 58, 0.2);
+  }*/
+}
+.article1 #button {
+  background-color: #1c87c9;
+  border: none;
+  color: white;
+  padding: 20px 34px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+>>>>>>> 0176df1c839d7c2720b7eba4cedaedb7b9cc75d0
 .article1 button:hover {
   transform: scale(0.95);
 }
