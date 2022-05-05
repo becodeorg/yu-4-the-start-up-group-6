@@ -90,26 +90,24 @@ header .allNav #navTwo {
 .article1 button {
   background-color: #f99136;
   font-family: Arial, Helvetica, sans-serif;
-  margin-top: 10px;
-  margin-left: 150px;
+  margin-left: 160px;
   border-radius: 10px 10px 10px 10px;
   -webkit-border-radius: 10px 10px 10px 10px;
   -moz-border-radius: 10px 10px 10px 10px;
   -ms-border-radius: 10px 10px 10px 10px;
   -o-border-radius: 10px 10px 10px 10px;
+  box-shadow: 0 4px 10px 5px rgba(68, 65, 58, 0.2);
+}
+.article1 button:hover {
+  transform: scale(0.95);
 }
 .article1 p {
   color: #005371;
   margin-left: 28px;
+  margin-right: 35px;
 }
-.article1 h1 {
-  margin-left: 85px;
-  font-family: Arial, Helvetica, sans-serif;
+.article1 h3 {
   color: #005371;
-  text-shadow: 2px 2px 3px #272525;
-  text-transform: uppercase;
-  font-size: x-large;
-  font-weight: bold;
 }
 
 .article2 {
@@ -126,6 +124,20 @@ header .allNav #navTwo {
   margin: 20px 10px;
   padding: 20px;
   text-align: center;
+}
+#sizeImg .link, #handImg .link {
+  position: relative;
+}
+
+#sizeImg h1 {
+  color: aliceblue;
+  text-shadow: 2px 2px 3px #272525;
+  text-transform: uppercase;
+  font-size: x-large;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #sizeImg:hover {
