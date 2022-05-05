@@ -22,10 +22,10 @@
 <hr>
 <h4>We as Co-Founders of Fit It</h4>
 <ul>
-<li>We used a Grid for both pages and flex for the cards display has the main design structure</li>
-<li></li>
-<li></li>
-<li></li>
+<li>One of us made the Home page.</li>
+<li>The other made the Women product page</li>
+<li>There was equal amount of communication, input and output.</li>
+<li>In the end: the Fit It website was a real (sweat and tears) team effort!</li>
 </ul>
 
 <h3>New in Fit It</h3>
