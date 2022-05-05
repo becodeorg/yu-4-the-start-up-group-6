@@ -84,8 +84,18 @@ header .allNav #navTwo {
 .article1 {
   grid-column: span 2;
   padding: 10px;
-  padding-left: 50px;
+  padding-left: 150px;
   margin-left: 55px;
+}
+.article1 h1 {
+  color: aliceblue;
+  text-shadow: 2px 2px 3px #272525;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: normal;
+  position: absolute;
+  padding: 0px;
+  margin: -250px 65px;
 }
 .article1 button {
   background-color: #f99136;

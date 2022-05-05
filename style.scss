@@ -94,8 +94,20 @@ header{
 .article1{
     grid-column: span 2;
     padding:$main-padding;
-    padding-left: 50px;
+    padding-left: 150px;
     margin-left: 55px;
+    
+    h1 {
+        color: aliceblue;
+        text-shadow: 2px 2px 3px #272525;
+        text-transform: uppercase;
+        text-align: center;
+        font-size:normal;
+        position: absolute;
+        padding: 0px;
+        margin: -250px 65px;
+       
+    }
 
         button{
             background-color: #f99136;
