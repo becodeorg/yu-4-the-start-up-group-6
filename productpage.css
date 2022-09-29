@@ -242,11 +242,9 @@ h4, h5 {
   .container {
     grid-template-columns: 1fr;
   }
-
   .article1 {
     grid-column: span 1;
   }
-
   .article2 {
     grid-column: span 1;
   }
@@ -255,11 +253,9 @@ h4, h5 {
   .container {
     grid-template-columns: repeat(2, 1fr);
   }
-
   .article1 {
     grid-column: span 1;
   }
-
   .article2 {
     grid-column: span 1;
   }
@@ -343,8 +339,7 @@ h4, h5 {
 }
 
 .card:hover {
-  transform: scale(0.95);
-  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(0.95); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 #mainpic {

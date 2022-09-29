@@ -242,11 +242,9 @@ h4, h5 {
   .container {
     grid-template-columns: 1fr;
   }
-
   .article1 {
     grid-column: span 1;
   }
-
   .article2 {
     grid-column: span 1;
   }
@@ -255,11 +253,9 @@ h4, h5 {
   .container {
     grid-template-columns: repeat(2, 1fr);
   }
-
   .article1 {
     grid-column: span 1;
   }
-
   .article2 {
     grid-column: span 1;
   }
